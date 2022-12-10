@@ -1,5 +1,5 @@
 
-export default class Pet {
+class Pet {
 
     constructor(type, name, age, height, weigth ){
         this.type = type;
@@ -15,3 +15,44 @@ export default class Pet {
 
     static listPets = {pets:[]}
 }
+
+class Medicine {
+
+    constructor(name, description, price, type){
+
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.type =  type;
+    }
+
+    static listMedicine = {medicines:[]}
+}
+
+class Vaccine {
+    
+        constructor(name, description, price, type, dosage){
+    
+            this.name = name;
+            this.description = description;
+            this.price = price;
+            this.type =  type;
+            this.dosage = dosage;
+        }
+    
+        static listVaccine = {vaccines:[]}
+    }
+
+class MyPet {
+
+    constructor(pet, medicine, vaccine){
+
+        this.pet = pet;
+        this.medicine = medicine;
+        this.vaccine = vaccine;
+    }
+
+    static listMyPet = {mypets:[]}
+}
+
+module.exports = {Pet, Medicine, Vaccine, MyPet}
